@@ -22,7 +22,7 @@ module Capistrano::Chef
   end
 
   def self.get_apps_data_bag_item(id)
-    Chef::DataBagItem.load(:apps, id).raw_data
+    Chef::DataBagItem.load('apps', id).raw_data
   end
 
   # Load into Capistrano
